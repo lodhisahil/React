@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Button({
+export default function Button({
     children,
-    type = 'button',
-    bgColor = 'bg-blue-600',
-    textColor = 'text-white',
-    className = '',
+    type = "button",
+    bgColor = "bg-blue-600",
+    textColor = "text-white",
+    className = "",
     ...props
 
 }) {
@@ -16,4 +16,3 @@ function Button({
   )
 }
 
-export default Button

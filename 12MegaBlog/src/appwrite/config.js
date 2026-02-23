@@ -89,7 +89,7 @@ export class Service{
             ) 
         } catch (error) {
             console.log("Appwrite service :: getPosts :: error", error);
-            
+            return false
         }
     }
 
@@ -100,7 +100,7 @@ export class Service{
             return await this.bucket.createFile(
                 conf.appwriteBucketId,
                 ID.unique(),
-                file,
+                file
             )
         } catch (error) {
             console.log("Appwrite service :: uploadFile :: error", error);
